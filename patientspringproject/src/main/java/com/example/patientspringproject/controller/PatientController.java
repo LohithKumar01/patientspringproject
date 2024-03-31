@@ -22,7 +22,7 @@ public class PatientController {
     @PostMapping("/patient")
     public ResponseEntity<Void> createPatientDetails(@RequestBody PatientDetails patientDetails){
         patientService.createPatientDetails(patientDetails);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT); //No Content on Postman.
     }
 
 }
